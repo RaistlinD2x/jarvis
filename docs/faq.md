@@ -1,5 +1,9 @@
 # FAQ
 
+## Why did folders appear in my home directory?
+
+`jarvis install` injects rules into the **current working directory**. If you run it from `~`, it writes project files there. Install the CLI with `npm install -g github:RaistlinD2x/jarvis`, then run `jarvis install` only inside a project. To undo a mistaken home install: `cd ~ && jarvis uninstall` (or the same via `npx --yes github:RaistlinD2x/jarvis uninstall`).
+
 ## Why does `npx jarvis` fail?
 
 The npm name [`jarvis`](https://www.npmjs.com/package/jarvis) is an unrelated 2011 package with **no executable**. This project is not that package. Use GitHub until a scoped publish lands:

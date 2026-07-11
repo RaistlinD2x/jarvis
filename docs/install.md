@@ -2,22 +2,35 @@
 
 Jarvis is a project-scoped rule pack injector for **Cursor** and **Claude Code** (macOS, Linux, Windows). Requires **Node.js 20+**. Files are copied (no symlinks).
 
-## Quick install
+Two different steps:
 
-```bash
-npx --yes github:RaistlinD2x/jarvis install --host all
-```
+1. **Install the CLI** onto your machine (once).
+2. **Inject rules** into a project directory (`jarvis install`).
 
-Or from a clone / global git install:
+Do **not** run `jarvis install` from your home directory — it treats cwd as the project and writes rule folders there.
+
+## 1. Install the CLI
 
 ```bash
 npm install -g github:RaistlinD2x/jarvis
+jarvis --help
+```
+
+One-shot without a global install:
+
+```bash
+npx --yes github:RaistlinD2x/jarvis --help
+```
+
+> The bare npm name `jarvis` is an unrelated 2011 package with no CLI. Until this project is published under a scoped name (e.g. `@raistlind2x/jarvis`), install from GitHub as above.
+
+## 2. Inject rules into a project
+
+```bash
 cd your-project
 jarvis install --host all
 jarvis templates   # optional product / design / metaplan scaffolds
 ```
-
-> The bare npm name `jarvis` is an unrelated 2011 package with no CLI. Until this project is published under a scoped name (e.g. `@raistlind2x/jarvis`), install from GitHub as above.
 
 Hosts: `cursor` | `claude-code` | `all` (default). Only `--scope project` is supported in v1.
 

@@ -18,9 +18,20 @@
   <img src="https://img.shields.io/badge/Claude%20Code-supported-191919?style=flat&logo=anthropic&logoColor=white" alt="Claude Code">
 </p>
 
+**Install the CLI** (once):
+
 ```bash
-npx --yes github:RaistlinD2x/jarvis install --host all
+npm install -g github:RaistlinD2x/jarvis
 ```
+
+**Inject rules into a project** (run inside that repo — not your home directory):
+
+```bash
+cd your-project
+jarvis install --host all
+```
+
+Full details: [Install & CLI](docs/install.md).
 
 ---
 
@@ -32,7 +43,7 @@ Jarvis is the opposite default: **structure the work before anyone writes**, ass
 
 ## What happens if you use it
 
-1. You run the CLI in a project. Jarvis copies a rule pack into **Cursor** and/or **Claude Code**, plus a short doctrine spine (`AGENTS.md` / `CLAUDE.md`) and local state under `.jarvis/`.
+1. You install the CLI, then run `jarvis install` **inside a project**. Jarvis copies a rule pack into **Cursor** and/or **Claude Code**, plus a short doctrine spine (`AGENTS.md` / `CLAUDE.md`) and local state under `.jarvis/`.
 2. Non-trivial asks become an **L0→L4 metaplan** (or an explicit trivial waiver). Dependencies and order live at L3. Every L4 names a **persona** and a **model** tag (`simple` | `complex`).
 3. You dispatch work with `Metaplan only`, `Execute #id`, or `Execute ready leaves`. Agents follow the tagged persona and host-mapped model. Deviation → stop and ask.
 4. Product, design, and implementation stay in their lanes: **Bar Raiser** scopes, **Architect** shapes, **Ponytail** codes — as leaves on the tree, not a pipeline you finish before planning.
@@ -44,7 +55,7 @@ Jarvis is the opposite default: **structure the work before anyone writes**, ass
 | [Metaplanning](docs/metaplanning.md) | L0→L4, node fields, waivers, execution protocol |
 | [Personas](docs/personas.md) | Bar Raiser, Architect, Ponytail, and supporting roles |
 | [Model tags](docs/models.md) | `simple` / `complex` and host defaults |
-| [Install & CLI](docs/install.md) | Install, files written, commands, uninstall |
+| [Install & CLI](docs/install.md) | CLI install vs project inject, files written, commands |
 | [FAQ](docs/faq.md) | Common questions |
 
 Canonical rule text ships in `pack/` and is what the CLI injects. These docs explain the system; the pack is the source of truth agents load.
