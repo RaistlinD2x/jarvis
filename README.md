@@ -19,7 +19,7 @@
 </p>
 
 ```bash
-npx jarvis install --host all
+npx --yes github:RaistlinD2x/jarvis install --host all
 ```
 
 ---

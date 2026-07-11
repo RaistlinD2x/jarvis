@@ -1,5 +1,15 @@
 # FAQ
 
+## Why does `npx jarvis` fail?
+
+The npm name [`jarvis`](https://www.npmjs.com/package/jarvis) is an unrelated 2011 package with **no executable**. This project is not that package. Use GitHub until a scoped publish lands:
+
+```bash
+npx --yes github:RaistlinD2x/jarvis install --host all
+```
+
+See [Install & CLI](install.md).
+
 ## Do I need a config file?
 
 No. `jarvis install` writes `.jarvis/config.json` with default model maps. Edit it if your host’s model names differ. See [Model tags](models.md).
