@@ -12,8 +12,18 @@ Do **not** run `jarvis install` from your home directory — it treats cwd as th
 ## 1. Install the CLI
 
 ```bash
+npm uninstall -g jarvis 2>/dev/null
 npm install -g github:RaistlinD2x/jarvis
 jarvis --help
+```
+
+If you previously linked a local checkout (`npm install -g /path/to/jarvis`), uninstall first — a leftover symlink makes npm fail with `ENOTDIR` on rename.
+
+From this repo instead of GitHub:
+
+```bash
+npm pack
+npm install -g ./jarvis-0.1.0.tgz
 ```
 
 One-shot without a global install:
