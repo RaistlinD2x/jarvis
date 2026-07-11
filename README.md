@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/RaistlinD2x/jarvis?style=flat" alt="MIT license"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat" alt="MIT license"></a>
   <a href="https://github.com/RaistlinD2x/jarvis/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/RaistlinD2x/jarvis/ci.yml?branch=main&style=flat&label=CI" alt="CI"></a>
   <img src="https://img.shields.io/badge/node-%3E%3D20-brightgreen?style=flat&logo=nodedotjs&logoColor=white" alt="Node >= 20">
   <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript">
