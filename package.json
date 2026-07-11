@@ -1,0 +1,49 @@
+{
+  "name": "jarvis",
+  "version": "0.1.0",
+  "description": "Metaplanning + Bar Raiser + Architect + Ponytail rule pack injector for Cursor and Claude Code",
+  "type": "module",
+  "bin": {
+    "jarvis": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "pack"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "cursor",
+    "claude-code",
+    "metaplanning",
+    "agents",
+    "rules"
+  ],
+  "author": "RaistlinD2x",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaistlinD2x/jarvis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RaistlinD2x/jarvis/issues"
+  },
+  "homepage": "https://github.com/RaistlinD2x/jarvis#readme",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "packVersion": "0.1.0",
+  "hosts": [
+    "cursor",
+    "claude-code"
+  ],
+  "files": {
+    ".cursor/rules/metaplanning.mdc": "dc24df05477da2c456c0b50e49f0ebce39ac97773f18f92cdfb96a09a32972e3",
+    ".cursor/rules/bar-raiser.mdc": "b539d3882e03643807bd5a9ef1157e31f5bdadea90557b0dc3f93a04d1764dec",
+    ".cursor/rules/architect.mdc": "12871123a4b178179d8baadf826ebad10d5a7660920cdd4deda31b09bb18436c",
+    ".cursor/rules/ponytail.mdc": "81dbe6ca9fa81253ce49bdb1cab83a6fc0b2a91d26b018a0d2c42c1f794bc70d",
+    ".claude/rules/metaplanning.md": "b1a7781e1d71f265c3a8411d20d7d789cad9a4801112988007eff9000dc2b517",
+    ".claude/rules/bar-raiser.md": "c3012bb62cc96b9bb84de553281089714727206513837e9ff9c8a2df035220cd",
+    ".claude/rules/architect.md": "c715a8cf261dd6101be60e84e2e3ce37a5380d7f9302c1dc574181e62a1342d3",
+    ".claude/rules/ponytail.md": "0b796b52ffb1e31142ad0ea1efc59dda144e769c540d449f82752194c99c2b13",
+    "AGENTS.md": "f7a69024a8b8e2c7042dbd1a4c6669e2bae3c3f38011c81ef299d80b76ba483e",
+    "CLAUDE.md": "5cb32ebc8977a5d7483e6e385480521cfb6a6deed9feb9ab61cb6b3bf8b56542"
+  },
+  "installedAt": "2026-07-11T01:30:40.519Z"
+}

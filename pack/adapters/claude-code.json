@@ -1,0 +1,34 @@
+{
+  "rules": {
+    "metaplanning": {
+      "out": ".claude/rules/metaplanning.md",
+      "description": "Metaplanning is above all activities. Decompose work into L0→L4 with persona, model, and deps before executing."
+    },
+    "bar-raiser": {
+      "out": ".claude/rules/bar-raiser.md",
+      "paths": [
+        "docs/product/**",
+        "**/*PRFAQ*",
+        "**/*prfaq*"
+      ],
+      "description": "Bar Raiser for product decisions and documentation."
+    },
+    "architect": {
+      "out": ".claude/rules/architect.md",
+      "paths": [
+        "docs/design/**",
+        "**/adr/**",
+        "**/*architecture*"
+      ],
+      "description": "Architect for engineering design docs."
+    },
+    "ponytail": {
+      "out": ".claude/rules/ponytail.md",
+      "description": "Ponytail — laziest correct code."
+    }
+  },
+  "spine": {
+    "agents": "AGENTS.md",
+    "claude": "CLAUDE.md"
+  }
+}

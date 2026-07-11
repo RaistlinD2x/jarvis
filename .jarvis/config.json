@@ -1,0 +1,17 @@
+{
+  "hosts": [
+    "cursor",
+    "claude-code"
+  ],
+  "models": {
+    "cursor": {
+      "simple": "composer-2.5-fast",
+      "complex": "grok-4.5-xhigh"
+    },
+    "claude-code": {
+      "simple": "claude-haiku-4-5",
+      "complex": "claude-opus-4-6"
+    }
+  },
+  "packVersion": "0.1.0"
+}

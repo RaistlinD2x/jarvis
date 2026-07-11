@@ -1,0 +1,27 @@
+{
+  "version": "0.1.0",
+  "rules": [
+    "metaplanning",
+    "bar-raiser",
+    "architect",
+    "ponytail"
+  ],
+  "managedFiles": {
+    "cursor": [
+      ".cursor/rules/metaplanning.mdc",
+      ".cursor/rules/bar-raiser.mdc",
+      ".cursor/rules/architect.mdc",
+      ".cursor/rules/ponytail.mdc"
+    ],
+    "claude-code": [
+      ".claude/rules/metaplanning.md",
+      ".claude/rules/bar-raiser.md",
+      ".claude/rules/architect.md",
+      ".claude/rules/ponytail.md"
+    ],
+    "spine": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  }
+}

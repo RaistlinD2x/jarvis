@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "metaplanning": {
+      "out": ".cursor/rules/metaplanning.mdc",
+      "alwaysApply": true,
+      "description": "Metaplanning is above all activities. Decompose work into L0→L4 with persona, model, and deps before executing."
+    },
+    "bar-raiser": {
+      "out": ".cursor/rules/bar-raiser.mdc",
+      "alwaysApply": false,
+      "globs": "docs/product/**/*,**/*PRFAQ*,**/*prfaq*",
+      "description": "Bar Raiser for product decisions and documentation. AWS writing style, fixed artifact types, problem decomposition first. Use when scoping work, writing product docs, PR/FAQs, or one-pagers."
+    },
+    "architect": {
+      "out": ".cursor/rules/architect.mdc",
+      "alwaysApply": false,
+      "globs": "docs/design/**/*,**/adr/**,**/*architecture*",
+      "description": "Architect for engineering design docs. C4, flows, contracts, ADRs, component slices. Cite product docs. Use when writing or reviewing technical design."
+    },
+    "ponytail": {
+      "out": ".cursor/rules/ponytail.mdc",
+      "alwaysApply": false,
+      "description": "Ponytail — laziest correct code. YAGNI, reuse, stdlib, native. Use when writing, changing, or reviewing code. Refuse non-trivial work without a metaplan or trivial waiver."
+    }
+  }
+}
